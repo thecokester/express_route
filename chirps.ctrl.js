@@ -1,5 +1,5 @@
 var express = require('express');
-var shortId = require('./id');
+var shortId = require('./shirtid');
 var fs = require('fs');
 var path = require('path');
 var momento = require('./moment');
