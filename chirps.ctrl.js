@@ -1,5 +1,5 @@
 var express = require('express');
-var shortId = require('./shirtid');
+var shortId = require('./shortid');
 var fs = require('fs');
 var path = require('path');
 var momento = require('./moment');
@@ -23,7 +23,7 @@ app.get('/chirps', function (req, res) {
         });
 });
 
-app.post(shortId, momento, function (req, res) {
+app.post(shortId, momento, timeStamp, function (req, res) {
     console.log('Post Markus')
      var chunks = '',
             data;
