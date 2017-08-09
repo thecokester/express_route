@@ -7,4 +7,4 @@ function generateTimestamp(req, res, next) {
     next();
 }
 
-module.exports = timeStamp;
+module.exports.generateTimestamp = generateTimestamp;
